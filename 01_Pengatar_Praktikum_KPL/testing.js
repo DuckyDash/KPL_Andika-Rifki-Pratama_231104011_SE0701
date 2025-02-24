@@ -17,7 +17,7 @@ input.question("What's your name?" , (nama) => {
                 userInfo.age = age
                 console.info(`Name : ${nama}`)
                 console.info(`Major : ${major}`)
-                console.info(`Universirty ${univ}`)
+                console.info(`University : ${univ}`)
                 console.info(`Age :  ${age}`)
                 input.close()
             })
