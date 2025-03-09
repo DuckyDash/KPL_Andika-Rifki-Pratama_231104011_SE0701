@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input & Output</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <input type="text" class="screen" id="screen" placeholder="Type something...">
+        <div id="output" class="output"></div>
+        <div class="button">
+            <button onClick="printText()">Print</button>
+            <button onClick="clearText()" style="background-color: red;">Delete</button>
+        </div>
+    </div>
+
+    <script>
+        function printText() {
+            let inputField = document.getElementById("screen");
+            let outputField = document.getElementById("output");
+            let screenValue = inputField.value.trim();
+
+            if (screenValue === "") {
+                outputField.innerText = "Please enter something!";
+            } else {
+                outputField.innerText = "Hallo " + screenValue + "!";
+            }
+        }
+
+
+        function clearText() {
+            document.getElementById("screen").value = "";
+            document.getElementById("output").innerText = "";
+        }
+
+    </script>
+
+</body>
+</html>
