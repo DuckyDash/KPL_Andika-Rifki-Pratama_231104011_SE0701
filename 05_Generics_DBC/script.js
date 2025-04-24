@@ -69,7 +69,7 @@ window.deposit = function () {
         // Mengosongkan pesan error jika berhasil
         document.getElementById("error-message").innerText = "";
     } catch (error) {
-        // Menampilkan pesan error jika terjadi kesalahan
+        // Menampilkan pesan error jika terjadi kesalahan 
         document.getElementById("error-message").innerText = error.message;
     }
 }
