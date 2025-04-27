@@ -33,7 +33,7 @@ class CovidConfig {
     saveConfig() {
         const config = {
             satuan_suhu: this.satuan_suhu,
-            batas_hari_deman: this.batas_hari_deman,
+            batas_hari_demam: this.batas_hari_demam,
             pesan_ditolak: this.pesan_ditolak,
             pesan_diterima: this.pesan_diterima
         };
