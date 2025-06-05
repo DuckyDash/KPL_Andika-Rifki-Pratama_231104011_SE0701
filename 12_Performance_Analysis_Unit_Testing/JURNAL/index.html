@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GUI Pangkat</title>
+</head>
+<body>
+  <h2>Cari Nilai Pangkat</h2>
+  <input id="inputA" type="number" placeholder="Input a">
+  <input id="inputB" type="number" placeholder="Input b">
+  <button onclick="hitung()">Hitung</button>
+  <p>Hasil: <span id="output">-</span></p>
+
+  <script>
+    function hitung() {
+      const a = document.getElementById('inputA').value;
+      const b = document.getElementById('inputB').value;
+      const result = window.api.cariNilaiPangkat(a, b);
+      document.getElementById('output').innerText = result;
+    }
+  </script>
+</body>
+</html>
